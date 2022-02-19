@@ -38,7 +38,6 @@ main {
     justify-content: center;
     align-items: center;
     background-color: var(--white);
-    z-index: 100;
 }
 main img {
     width: 100%;
