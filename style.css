@@ -22,7 +22,7 @@ body {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
     background-color: var(--light-gray);
     font-family: "Outfit";
@@ -51,12 +51,6 @@ main p {
 }
 
 /* Footer  */
-footer {
-    position: absolute;
-    bottom: 10px;
-    z-index: 0;
-    width: 100%;
-}
 footer p {
     color: var(--dark-blue);
     text-align: center;
