@@ -1,0 +1,77 @@
+/* This is the only style file for index page, this page is responsive and just
+    use native css */
+
+/* Global Styling */
+:root {
+    /* colors */
+    --white: hsl(0, 0%, 100%);
+    --light-gray: hsl(212, 45%, 89%);
+    --grayish-blue: hsl(220, 15%, 55%);
+    --dark-blue: hsl(218, 44%, 22%);
+
+    /* font sizes */
+    --main-font-size: 15px;
+    --attribution-font-size: 12px;
+}
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--light-gray);
+    font-family: "Outfit";
+    font-size: var(--main-font-size);
+}
+
+/* Main content Styling */
+main {
+    width: 300px;
+    padding: 20px;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--white);
+    z-index: 100;
+}
+main img {
+    width: 100%;
+}
+main h1,
+main p {
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* Footer  */
+footer {
+    position: absolute;
+    bottom: 10px;
+    z-index: 0;
+    width: 100%;
+}
+footer p {
+    color: var(--dark-blue);
+    text-align: center;
+}
+
+@media (max-width: 300px) {
+    :root {
+        --main-font-size: 12px;
+    }
+    main {
+        width: 100%;
+    }
+}
+@media (max-width: 200px) {
+    :root {
+        --main-font-size: 8px;
+    }
+}
